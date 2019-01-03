@@ -1,0 +1,301 @@
+
+/* Typography */
+
+/*font-family: 'Open Sans', sans-serif;*/
+
+
+
+/* // End typography */
+
+
+/*	Resets
+	------	*/
+
+html,body,div, span,  object,  iframe,  h1,  h2,  h3,  h4,  h5,  h6,  p,  blockquote,  pre,  a,  abbr,  address,  cite,  code,  del,  dfn,  em, img,ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,  dl,  dt,  dd,  ol,  ul,  li,  fieldset,  form,  label,  legend,  table,  caption,  tbody,  tfoot,  thead,  tr,  th,  td,  article,  aside,  canvas,  details,  figure,  figcaption,  hgroup,  menu,  footer,  header,  nav,  section,  summary,  time,  mark,  audio,  video {margin: 0; padding: 0; border: 0; }
+
+ ul{list-style: none; } 
+ article, aside, canvas, figure,figure img,  figcaption,  hgroup,  footer,  header,  nav,  section,  audio,  video {display: block;}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table{border-collapse: collapse; border-spacing: 0; }
+b, strong { font-weight: bold; }
+[type="checkbox"], [type="radio"] { box-sizing: border-box; padding: 0; }
+[type="search"] { -webkit-appearance: textfield; outline-offset: -2px; }
+[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+::-webkit-file-upload-button {-webkit-appearance: button; font: inherit;}
+
+ .clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0; height:0; font-size: 0;}
+ a img{border:0; border-style: none; }
+ a, input, select, textarea{outline:none;}
+ img{width: auto; height: auto; max-width: 100%; vertical-align: bottom; border-style: none;}
+
+/* Selection colours (easy to forget) */
+ img::selection 		{background: transparent;}
+ img::-moz-selection	{background: transparent;}
+ a{text-decoration: none; display: inline-block;}
+
+ input[type='number']{-moz-appearance:textfield;}
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button{-webkit-appearance: none;}
+ input::-moz-focus-inner{border:0; padding: 0; }
+ input[type="search"]::-webkit-search-decoration,
+ input[type="search"]::-webkit-search-cancel-button,
+ input[type="search"]::-webkit-search-results-button,
+ input[type="search"]::-webkit-search-results-decoration {
+   display: none;
+ }
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+body{background: rgb(255,255,255); -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; overflow-x: hidden; overflow-y:auto; font-size: 18px; line-height: 26px; font-family: 'Open Sans', sans-serif; font-weight: 400; color: #2e3b4e}
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+
+/* Global style */
+h1,  h2,  h3,  h4,  h5,  h6{font-family: 'Open Sans', sans-serif; font-weight: 600;}
+h1,h2{font-size: 36px; line-height: 44px}
+h3{font-size: 30px; line-height: 38px}
+h4{font-size: 20px; line-height: 28px}
+h5{font-size: 18px; line-height: 26px; text-transform: uppercase}
+
+
+dfn,  address,  em{font-style: normal;}
+label,  input[type="submit"]{cursor: pointer;}
+button:focus{outline: none;}
+
+.md-container, .common-wrap, .lg-container, .lg-md-container, .sm-container, .small-container, .ex-md-container{max-width: 1260px; margin: 0 auto; clear: both; padding: 0 40px;}
+.common-wrap .md-container, .common-wrap .lg-container, .common-wrap .lg-md-container, .common-wrap .sm-container, .common-wrap .small-containe, .common-wrap .ex-md-container{padding: 0;} 
+.lg-container{max-width: 1265px;}
+.lg-md-container{max-width: 1140px;}
+.md-container{max-width: 1040px;}
+.ex-md-container{max-width: 1055px;}
+.sm-container{max-width: 980px;}
+.small-container{max-width: 700px;}
+
+.text-center{text-align: center}
+.article{font-size: 18px; line-height: 26px}
+.section-title{float: left; width: 100%}
+
+section, footer, header, .main-wrap{float: left; width: 100%; position: relative;}
+.main-wrap{overflow: hidden;}
+
+/* Flex-box- style */
+.flex{display: -webkit-flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; flex-flow: row wrap;}
+.flex-box{display: -webkit-flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; flex-flow: row wrap; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between;}
+.flex-horizontal-align{-webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center;}
+.flex-vertical-align{-webkit-box-align: center; align-items: center;}
+.flex-bottom-align{-webkit-box-align: flex-end; align-items: flex-end;}
+.flex-content-align{-webkit-align-content: center; -moz-align-content: center; align-content: center;}
+.order-1{-webkit-order: 1; -moz-order: 1; -ms-order: 1; order: 1;}
+.order-2{-webkit-order: 2; -moz-order: 2; -ms-order: 2; order: 2;}
+/* End Flex-box- style */
+
+/* input-type style */
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="search"], textarea{ height: 50px; font-size: 18px; line-height: 48px; color: #dfdfeb; padding: 0 13px; border: 2px solid transparent; font-family: 'Open Sans', sans-serif; font-weight: 600; float: left; width: 100%; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; background-color: #ffffff}
+input[type="submit"]{border: 0; font-family: 'Open Sans', sans-serif; font-weight: 600;}
+textarea{height: 87px; resize: none}
+/* End input-type style */
+
+/* button style */
+.btn{-webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out; font-size: 16px; font-weight: 600; line-height: 69px; height: 68px; color: #ffffff; text-align: center; letter-spacing: 0; text-transform: uppercase;}
+.green-btn{background-color: #7cb9a7}
+/* End button style */
+
+
+/* header style */
+.header-section{background-color: #ffffff;  border-bottom: 1px solid rgb(151, 151, 151); box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); position: relative; z-index: 99; padding: 21px 0 9px}
+.logo-wrap{float: left; width: 100%;}
+.main-logo {max-width: 450px; margin: 0 auto}
+.main-logo a.logo{width: 447px;}
+.header-section .common-wrap{position: relative}
+.nav-wrap{position: absolute; right: 40px; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); transform: translateY(-50%);}
+.main-nav > ul > li a{color: #2e3b4e; float: left; font-size: 16px; line-height: 22px; font-weight: 700; text-transform: uppercase; cursor: pointer}
+/* End header style */
+
+.bg-theme{background-color: #f5f8f3}
+
+/* Hero section style */
+.hero-section{background-repeat: no-repeat; background-position: center center; background-size: cover; min-height: 510px;}
+.hero-section .common-wrap{width: 100%;}
+.hero-section-inner{float: left; width: 100%}
+.hero-section .section-title{max-width: 510px; float: right; font-weight: 600}
+.hero-section .article{font-size: 20px; margin-top: 17px}
+.section-title h2{white-space: nowrap}
+.section-title h4{margin: 20px 0}
+.section-title dfn{margin-top: 25px; display: block}
+.quote-section{margin-top: 100px}
+.quote-section blockquote{font-size: 30px; line-height: 36px; font-style: italic; font-weight: 600}
+.author{float: right; margin-top: 25px; text-transform: capitalize;}
+
+.about-us{float: left; width: 100%; margin-top: 85px}
+.row{margin-top: 40px}
+.row:nth-child(odd) > div{float: right;}
+.row:nth-child(even) > div{float: left;}
+.row-position{max-width: 1080px;}
+.row-content{float: left; width: 64.07407407407407%; background-color: #ffffff; padding: 60px 60px 30px 170px; position: relative; z-index: 1}
+.row-content .author{font-size: 14px; font-weight: 400; line-height: 22px; margin-top: -50px;}
+.row-thum{float: left; width: 41.85185185185185%; margin-right: -8.333333333333333%; position: relative; z-index: 2}
+.row-content.order-1 {padding: 60px 170px 30px 60px}
+.row-thum.order-2 {margin-left: -8.333333333333333%}
+.contact-wrap{float: left; width: 100%; margin-top: 50px}
+.contact-wrap .section-title .article{margin-top: 25px}
+.contact-col{margin: 0 7.692307692307692%}
+.contact-col:first-child, .info-col:first-child{margin-left: 0}
+.contact-col:last-child, .info-col:last-child{margin-right: 0}
+
+.two-col{float: left; width: 52.61538461538462%}
+.one-third{float: left; width: 32%}
+.one-third h2{margin-top: 20px}
+.contact-info{float: left; width: 100%; margin-top: 40px}
+.info-col{float: left; width: 47.36842105263158%; margin: 0 2.631578947368421%}
+.info-col a{color: #ffffff; display: block; text-transform: inherit; margin-top: 20px}
+.input-row{float: left; width: 100%; margin-top: 15px}
+.input-row input[type="submit"]{margin-top: 34px; width: 243px}
+.input-row input[type="submit"]:hover{background-color: rgb(54, 83, 75)}
+.client-logo{margin-top: 90px}
+.client-logo-wrap{float: left; width: 100%; margin: 59px 0} 
+.client-logo-item{float: left; width: 18.85416666666667%; margin: 0 4.097222222222222%}
+.client-logo-item:nth-child(4n+1){margin-left: 0}
+.client-logo-item:nth-child(4n+4){margin-right: 0}
+.main-footer-section > div{border-top: 1px solid #e5e6ed;}
+.footer-inner{max-width: 960px;}
+.footer-row{margin: 0 -15px; padding: 17px 0 40px}
+.footer-row *{font-size: 15px; line-height: 18px; font-style: italic;}
+.footer-address, .copy-right{padding: 0 15px; width: 50%; float: left;}
+.separator{margin: 0 7px}
+.footer-address a{color: #2e3b4e;}
+
+/* =======================================================================================================
+============================================ Responsive style ========================================== */
+
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+     input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], input[type="submit"], input[type="password"], select, textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+    
+    h2{font-size: 30px; line-height: 38px}
+    h4, .article{font-size: 16px; line-height: 24px}
+    h5{font-size: 14px; line-height: 22px;}
+    .md-container, .common-wrap, .lg-container, .lg-md-container, .sm-container, .small-container, .ex-md-container{padding: 0 20px;}
+    .btn{height: 50px; line-height: 51px}
+    .main-logo{float: left}
+    .main-logo a.logo {width: 220px;}
+    .nav-wrap{right: 20px}
+    .main-nav > ul > li a{font-size: 13px; line-height: 20px}
+    .hero-section .section-title{max-width: 300px}
+    .hero-section .article{font-size: 16px}
+    .quote-section, .about-us, .client-logo{margin-top: 30px}
+    .quote-section blockquote{font-size: 24px; line-height: 32px}
+    .row:first-child, .one-third h2{margin-top: 0}
+    .row-position{display: block}
+    .row,.row-thum, .row-content, .two-col, .one-third, .footer-address, .copy-right{float: left; width: 100%}
+    .row-thum img{width: 100%}
+    .row-thum, .row-thum.order-2, .contact-col{margin-left: 0; margin-right: 0}
+    .row-content, .row-content.order-1{padding: 30px 30px}
+    .section-title h2{white-space: normal}
+    .section-title dfn{font-size: 16px}
+    .one-third{margin-top: 20px}
+    .contact-info, .input-row input[type="submit"], .info-col a{margin-top: 15px}
+    input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="search"]{height: 40px; font-size: 14px; line-height: 39px;}
+    input[type="text"], input[type="email"],input[type="submit"], textarea{border-radius: 0}
+    .client-logo-wrap{margin: 20px 0}
+    .client-logo-item{width: 48%; margin: 0 2%}
+    .client-logo-item:nth-child(2n+1){margin-left: 0}
+    .client-logo-item:nth-child(2n+2){margin-right: 0}
+    .footer-address{margin-top: 20px}
+
+}
+
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+     input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], input[type="submit"], input[type="password"], select, textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    .nav-wrap{right: 50px}
+    .quote-section,.about-us, .client-logo{margin-top: 70px}
+    .quote-section blockquote{font-size: 28px}
+    .client-logo-wrap{margin: 40px 0}
+    .row-position{display: block}
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+     input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], input[type="submit"], input[type="password"], select, textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+    
+    .main-logo a.logo { width: 380px;}
+    .hero-section .section-title{max-width: 330px}
+    .hero-section .article{font-size: 17px}
+    .row{display: block}
+    .row,.row-thum, .row-content{float: left; width: 100%}
+    .row-thum img{width: 100%}
+    .row-thum, .row-thum.order-2{margin-left: 0; margin-right: 0}
+    .row-content{padding: 30px 50px}
+    .contact-wrap{margin-top: 40px}
+    .one-third{width: 41%}
+    .contact-col{margin: 0 3%}
+	
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+     input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], input[type="submit"], input[type="password"], select, textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+    
+    .hero-section .section-title{max-width: 400px}
+    .hero-section .article{font-size: 17px}
+    .row-content.order-1, .row-content{padding: 50px 80px}
+    .row-thum.order-2 {margin-left: -5.964602%;}
+    .row-thum {margin-right: -5.964602%;}
+    .section-title h2{white-space: normal}
+    .one-third{width: 41%}
+    .contact-col{margin: 0 3%}
+    
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1160px) {
+     input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], input[type="submit"], input[type="password"], select, textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+    
+    .section-title h2{white-space: normal}
+	
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+     input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], input[type="submit"], input[type="password"], select, textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+    
+    .nav-wrap{right: 50px}
+	
+}
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+}
+
+
+
+
+
+
+
